@@ -1,27 +1,3 @@
-@property --green-check-fg {
-	inherits: true;
-	initial-value: #000;
-	syntax: '<color>';
-}
-
-@property --green-check-bg-gradient-start {
-	inherits: true;
-	initial-value: #06ff06;
-	syntax: '<color>';
-}
-
-@property --green-check-bg-gradient-stop {
-	inherits: true;
-	initial-value: #dffcdd;
-	syntax: '<color>';
-}
-
-@property --green-check-bg {
-	inherits: true;
-	initial-value: #fff;
-	syntax: '<color>';
-}
-
 @font-face {
 	font-family: 'TWK Everett';
 	src: url('https://www.thegreenwebfoundation.org/wp-content/themes/tgwf-2020/assets/fonts/twkeverett/twkeverett-regular.woff2')
@@ -30,9 +6,12 @@
 
 :host {
 	--green-check-fg: #000;
-	--green-check-bg-gradient-start: #6c6c6c;
-	--green-check-bg-gradient-stop: #dedede;
-	--green-check-bg: #fff;
+	--green-check-bg: linear-gradient(
+		45deg,
+		#6c6c6c 4%,
+		#dedede 24%,
+		#fff 32%
+	);
 
 	display: block;
 	width: fit-content;
@@ -42,9 +21,12 @@
 
 :host([green]:not([green='false'])) {
 	--green-check-fg: #000;
-	--green-check-bg-gradient-start: #06ff06;
-	--green-check-bg-gradient-stop: #dffcdd;
-	--green-check-bg: #fff;
+	--green-check-bg: linear-gradient(
+		45deg,
+		#06ff06 4%,
+		#dffcdd 24%,
+		#fff 32%
+	);
 }
 
 * {
@@ -67,12 +49,7 @@ a {
 	color: var(--green-check-fg);
 	letter-spacing: 0;
 
-	background-image: linear-gradient(
-		45deg,
-		var(--green-check-bg-gradient-start) 4%,
-		var(--green-check-bg-gradient-stop) 24%,
-		var(--green-check-bg) 32%
-	);
+	background: var(--green-check-bg);
 	border: 2px solid currentcolor;
 	border-radius: 8px;
 }
