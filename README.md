@@ -27,7 +27,7 @@ Alternatively, you may load the module via a CDN by adding to [importmap](https:
 <script type="importmap">
   {
     "imports": {
-      "@vnphanquang/green-check": "https://cdn.jsdelivr.net/npm/@vnphanquang/green-check/dist/greencheck.js"
+      "@vnphanquang/green-check": "https://cdn.jsdelivr.net/npm/@vnphanquang/green-check/dist/index.js"
     }
   }
 </script>
