@@ -1,5 +1,11 @@
 # @vnphanquang/green-check
 
+## 1.0.2
+
+### Patch Changes
+
+- [`b9da7d8`](https://github.com/vnphanquang/green-check/commit/b9da7d878e0f9e6ba4bb675f99807ef80fcb4176) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add keywords for npm
+
 ## 1.0.1
 
 ### Patch Changes
