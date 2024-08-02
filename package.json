@@ -8,6 +8,14 @@
 		"name": "Quang Phan",
 		"url": "https://github.com/vnphanquang"
 	},
+	"keywords": [
+		"green",
+		"hosting",
+		"greencheck",
+		"green web foundation",
+		"web component",
+		"custom element"
+	],
 	"homepage": "https://github.com/vnphanquang/green-check",
 	"repository": {
 		"type": "git",
