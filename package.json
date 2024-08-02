@@ -38,6 +38,7 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
+		"prepublishOnly": "pnpm run build",
 		"ci:version": "changeset version && pnpm install --no-frozen-lockfile",
 		"ci:publish": "changeset publish && pnpm install"
 	},
