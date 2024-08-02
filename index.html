@@ -9,30 +9,33 @@
 	<body>
 		<p>"google.com" should be green (at the time of this writing):</p>
 		<green-check hostname="google.com">
-			<img src="/fallback.svg" width="200" height="95" />
+			<img
+				src="https://cdn.jsdelivr.net/gh/vnphanquang/green-check@main/public/fallback.svg"
+				width="200"
+				height="95"
+				alt="fallback blank greencheck badge from The Green Web Foundation"
+			/>
 		</green-check>
 
 		<p>"github.com" should not be green (at the time of this writing):</p>
 		<green-check hostname="github.com">
-			<img src="/fallback.svg" width="200" height="95" />
+			<img
+				src="https://cdn.jsdelivr.net/gh/vnphanquang/green-check@main/public/fallback.svg"
+				width="200"
+				height="95"
+				alt="fallback blank greencheck badge from The Green Web Foundation"
+			/>
 		</green-check>
 
 		<p>If "hostname" attribute is not provide:</p>
 		<green-check>
-			<img src="/fallback.svg" width="200" height="95" />
+			<img
+				src="https://cdn.jsdelivr.net/gh/vnphanquang/green-check@main/public/fallback.svg"
+				width="200"
+				height="95"
+				alt="fallback blank greencheck badge from The Green Web Foundation"
+			/>
 		</green-check>
-
-		<style>
-			html {
-				background-color: #313131;
-			}
-			/* green-check { */
-			/*   --green-check-fg: #FFFFFF; */
-			/*   --green-check-bg: #000000; */
-			/*   --green-check-bg-gradient-start: #313131; */
-			/*   --green-check-bg-gradient-stop: #333333; */
-			/* } */
-		</style>
 
 		<script type="module">
 			import { GreenCheck } from './src/index.js';

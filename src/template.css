@@ -13,7 +13,7 @@
 @property --green-check-bg-gradient-stop {
 	inherits: true;
 	initial-value: #dffcdd;
-	syntax: '<color>'t;
+	syntax: '<color>';
 }
 
 @property --green-check-bg {
@@ -68,10 +68,10 @@ a {
 	letter-spacing: 0;
 
 	background-image: linear-gradient(
-		54deg,
-		var(--green-check-bg-gradient-start) 2.63%,
-		var(--green-check-bg-gradient-stop) 22.76%,
-		var(--green-check-bg) 29.86%
+		45deg,
+		var(--green-check-bg-gradient-start) 4%,
+		var(--green-check-bg-gradient-stop) 24%,
+		var(--green-check-bg) 32%
 	);
 	border: 2px solid currentcolor;
 	border-radius: 8px;
