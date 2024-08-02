@@ -1,9 +1,25 @@
 {
-  "name": "green-check",
-	"description": "Custom element to render green check image from the Green Web Foundation",
-  "version": "1.0.0",
-  "type": "module",
-	"files": ["dist"],
+	"name": "green-check",
+	"description": "Custom element to render green check badge from the Green Web Foundation",
+	"version": "1.0.0",
+	"license": "MIT",
+	"author": {
+		"email": "vnphanquang@gmail.com",
+		"name": "Quang Phan",
+		"url": "https://github.com/vnphanquang"
+	},
+	"homepage": "https://github.com/vnphanquang/green-check",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vnphanquang/green-check.git"
+	},
+	"bugs": {
+		"url": "https://github.com/vnphanquang/green-check/issues"
+	},
+	"type": "module",
+	"files": [
+		"dist"
+	],
 	"main": "./dist/greencheck..umd.cjs",
 	"module": "./dist/greencheck.js",
 	"exports": {
@@ -12,21 +28,37 @@
 			"require": "./dist/greencheck.umd.js"
 		}
 	},
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^5.3.4"
-  },
+	"scripts": {
+		"prepare": "husky || true",
+		"lint": "eslint . --ignore-path=\".eslintignore\"",
+		"format": "prettier --ignore-path .prettierignore --write .",
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@types/eslint": "^8.56.10",
+		"@types/node": "^20.14.12",
+		"@typescript-eslint/eslint-plugin": "^7.17.0",
+		"@typescript-eslint/parser": "^7.17.0",
+		"@vnphanquang/eslint-config": "^2.0.1",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"husky": "^9.1.1",
+		"lint-staged": "^15.2.7",
+		"prettier": "3.3.3",
+		"stylelint": "^16.7.0",
+		"stylelint-config-clean-order": "^6.1.0",
+		"stylelint-config-html": "^1.1.0",
+		"stylelint-config-standard": "^36.0.1",
+		"vite": "^5.3.4"
+	},
 	"packageManager": "pnpm@9.1.1",
 	"engines": {
-			"pnpm": ">=9.0.0",
-			"node": ">=20.0.0"
+		"pnpm": ">=9.0.0",
+		"node": ">=20.0.0"
 	},
 	"volta": {
-			"node": "20.13.0"
+		"node": "20.13.0"
 	}
 }
-
