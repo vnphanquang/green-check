@@ -1,0 +1,136 @@
+@property --green-check-fg {
+	inherits: true;
+	initial-value: #000;
+	syntax: '<color>';
+}
+
+@property --green-check-bg-gradient-start {
+	inherits: true;
+	initial-value: #06ff06;
+	syntax: '<color>';
+}
+
+@property --green-check-bg-gradient-stop {
+	inherits: true;
+	initial-value: #dffcdd;
+	syntax: '<color>'t;
+}
+
+@property --green-check-bg {
+	inherits: true;
+	initial-value: #fff;
+	syntax: '<color>';
+}
+
+@font-face {
+	font-family: 'TWK Everett';
+	src: url('https://www.thegreenwebfoundation.org/wp-content/themes/tgwf-2020/assets/fonts/twkeverett/twkeverett-regular.woff2')
+		format('woff2');
+}
+
+:host {
+	--green-check-fg: #000;
+	--green-check-bg-gradient-start: #6c6c6c;
+	--green-check-bg-gradient-stop: #dedede;
+	--green-check-bg: #fff;
+
+	display: block;
+	width: fit-content;
+	min-width: 200px;
+	min-height: 95px;
+}
+
+:host([green]:not([green='false'])) {
+	--green-check-fg: #000;
+	--green-check-bg-gradient-start: #06ff06;
+	--green-check-bg-gradient-stop: #dffcdd;
+	--green-check-bg: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	display: contents;
+}
+
+.container {
+	padding: 4px 8px 2px 10px;
+
+	font-family: 'TWK Everett', helvetica, sans-serif;
+	color: var(--green-check-fg);
+	letter-spacing: 0;
+
+	background-image: linear-gradient(
+		54deg,
+		var(--green-check-bg-gradient-start) 2.63%,
+		var(--green-check-bg-gradient-stop) 22.76%,
+		var(--green-check-bg) 29.86%
+	);
+	border: 2px solid currentcolor;
+	border-radius: 8px;
+}
+
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.title {
+	padding-top: 3px;
+
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+	border-bottom: 1px solid currentcolor;
+}
+
+svg {
+	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
+}
+
+.content {
+	flex: 1;
+	justify-content: flex-end;
+
+	padding: 6px 0 4px;
+
+	font-size: 9px;
+	line-height: 9px;
+}
+
+.content p {
+	min-height: 9px;
+}
+
+.content p:not(:first-child) {
+	margin-top: 5px;
+}
+
+.footer {
+	display: flex;
+	justify-content: flex-end;
+
+	width: 100%;
+	padding-top: 3px;
+
+	font-size: 10px;
+	line-height: 15px;
+	text-align: end;
+	text-transform: uppercase;
+
+	border-top: 1px solid currentcolor;
+}
+
