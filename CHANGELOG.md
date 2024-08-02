@@ -1,5 +1,11 @@
 # @vnphanquang/green-check
 
+## 1.0.3
+
+### Patch Changes
+
+- [`0456c73`](https://github.com/vnphanquang/green-check/commit/0456c73cd13e1848a363f0aedad3a6b53103646c) Thanks [@vnphanquang](https://github.com/vnphanquang)! - correct CDN entry point
+
 ## 1.0.2
 
 ### Patch Changes
