@@ -58,6 +58,9 @@ loadGreenCheck();
 
 ## 3. Using the Custom Element
 
+Use `<green-check>` where applicable with the `hostname` attribute as the host name of your
+site. If not provided `hostname` will default to `window.location.hostname`, i.e current site.
+
 ```html
 <green-check hostname="www.yourdomain.xyz">
   <img
@@ -74,7 +77,7 @@ loadGreenCheck();
 Colors of the badge can be customized by providing the following CSS custom properties (default values are shown):
 
 ```html
-<green-check>
+<green-check hostname="www.yourdomain.xyz">
   <!-- [...truncated fallback image...] -->
 </green-check>
 

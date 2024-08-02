@@ -14,7 +14,7 @@ export class GreenCheck extends HTMLElement {
 	async connectedCallback() {
 		const shadow = this.attachShadow({ mode: 'closed' });
 
-		const hostname = this.getAttribute('hostname') ?? '';
+		const hostname = this.getAttribute('hostname') ?? location.hostname;
 		const encodedHostname = encodeURIComponent(hostname);
 
 		const href = GREENCHECK_BASE_URL + '?url=' + encodedHostname;
@@ -46,3 +46,4 @@ export class GreenCheck extends HTMLElement {
 		shadow.appendChild(style);
 	}
 }
+
