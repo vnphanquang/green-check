@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 import css from './template.css?raw';
 import html from './template.html?raw';
 
@@ -23,7 +25,7 @@ export class GreenCheck extends HTMLElement {
 		if (hostname) {
 			const greencheck = await (await fetch(GREENCHECK_API_ENDPOINT + encodedHostname)).json();
 			if (greencheck.green) {
-				this.setAttribute('green', true);
+				this.toggleAttribute('green', true);
 				title = 'Green hosting';
 				line1 = hostname.slice(0, 30);
 				line2 = 'Hosted by ' + greencheck.hosted_by;

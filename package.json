@@ -23,12 +23,14 @@
 	"files": [
 		"dist"
 	],
-	"main": "./dist/greencheck..umd.cjs",
-	"module": "./dist/greencheck.js",
+	"main": "./dist/index.umd.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/greencheck.js",
-			"require": "./dist/greencheck.umd.js"
+			"import": "./dist/index.js",
+			"require": "./dist/index.umd.js",
+			"types": "./dist/index.d.ts"
 		}
 	},
 	"scripts": {
@@ -38,7 +40,7 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"prepublishOnly": "pnpm run build",
+		"prepublishOnly": "pnpm run build && publint",
 		"ci:version": "changeset version && pnpm install --no-frozen-lockfile",
 		"ci:publish": "changeset publish && pnpm install"
 	},
@@ -55,6 +57,7 @@
 		"husky": "^9.1.1",
 		"lint-staged": "^15.2.7",
 		"prettier": "3.3.3",
+		"publint": "^0.2.9",
 		"stylelint": "^16.7.0",
 		"stylelint-config-clean-order": "^6.1.0",
 		"stylelint-config-html": "^1.1.0",
