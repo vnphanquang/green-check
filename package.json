@@ -1,8 +1,17 @@
 {
   "name": "green-check",
-  "private": true,
-  "version": "0.0.0",
+	"description": "Custom element to render green check image from the Green Web Foundation",
+  "version": "1.0.0",
   "type": "module",
+	"files": ["dist"],
+	"main": "./dist/greencheck..umd.cjs",
+	"module": "./dist/greencheck.js",
+	"exports": {
+		".": {
+			"import": "./dist/greencheck.js",
+			"require": "./dist/greencheck.umd.js"
+		}
+	},
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,5 +19,14 @@
   },
   "devDependencies": {
     "vite": "^5.3.4"
-  }
+  },
+	"packageManager": "pnpm@9.1.1",
+	"engines": {
+			"pnpm": ">=9.0.0",
+			"node": ">=20.0.0"
+	},
+	"volta": {
+			"node": "20.13.0"
+	}
 }
+
