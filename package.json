@@ -1,5 +1,5 @@
 {
-	"name": "green-check",
+	"name": "@vnphanquang/green-check",
 	"description": "Custom element to render green check badge from the Green Web Foundation",
 	"version": "1.0.0",
 	"license": "MIT",
