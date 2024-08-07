@@ -1,10 +1,12 @@
 # Green Web Badge as Custom Element
 
-![green badge example](https://raw.githubusercontent.com/vnphanquang/green-check/main/.github/green.svg)
+[![npm badge](https://img.shields.io/npm/v/@vnphanquang/green-check?style=for-the-badge)](https://www.npmjs.com/package/@vnphanquang/green-check)
 
 ## Introduction
 
 This library defines an [HTML Custom Element](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) to check and display a badge if your site passes the [Green Web Check][greenwebcheck] from [The Green Web Foundation][greenwebfoundation].
+
+![green badge example](https://raw.githubusercontent.com/vnphanquang/green-check/main/.github/green.svg)
 
 See https://github.com/thegreenwebfoundation/admin-portal/issues/234 for the original discussion that led to this library.
 
