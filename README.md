@@ -100,7 +100,7 @@ This is helpful to ensure consistency with your site's color scheme or to suppor
 | [node]     | recommended via [volta]                 |                                 |
 | [pnpm]     | [follow guide on website][pnpm.install] | alternative to `npm` and `yarn` |
 
-See [package.json] for preferred versions of `node` and `pnpm`. At project root, run:
+See [package.json] for preferred versions of `node` and `pnpm`. If you have `volta` installed, simply `cd` to the project and the correct `node` version should be installed.
 
 ### Getting Started
 
@@ -116,15 +116,27 @@ And run development server
 pnpm dev
 ```
 
+### Versioning & Publishing to NPM
+
+We use [changeset] to partially automate the process. Typical workflow is as follow:
+
+1. make changes to codebase,
+2. run `pnpm changeset` at project root and follow prompt to generate a "changeset" (logging a change),
+3. commit both (1) and (2) into git,
+4. push to `main`, or (preferably) create PR, review and merge into `main` (prefer fast-forward merge if possible to keep linear git history),
+5. [changesets Github action](./.github/workflows/changesets.yaml) is triggered on `push` to `main` and will create a corresponding "Changesets: Versioning & Publication" PR.
+6. Merging (5) PR will trigger the `changesets` Github action to run again to build & push a new version to NPM.
+
 ### Todos
 
 - [ ] Add tests
 
 [greenwebfoundation]: https://www.thegreenwebfoundation.org
 [greenwebcheck]: https://www.thegreenwebfoundation.org/green-web-check
-
 [node]: https://nodejs.org/en/
 [volta]: https://volta.sh/
 [pnpm]: https://pnpm.io/
 [pnpm.install]: https://pnpm.io/installation
+[changeset]: https://github.com/changesets/changesets
+[package.json]: ./package.json
 
