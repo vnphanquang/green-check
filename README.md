@@ -85,8 +85,15 @@ Colors of the badge can be customized by providing the following CSS custom prop
 
 <style>
   green-check {
+    /* not passing green check */
+    --green-check-fg: #000;
+    --green-check-bg: linear-gradient(45deg, #6c6c6c 4%, #dedede 24%, #fff 32%);
+
+    &[green]:not([green="false"]) {
+      /* passing green check */
     --green-check-fg: #000;
     --green-check-bg: linear-gradient(45deg, #06ff06 4%, #dffcdd 24%, #fff 32%);
+    }
   }
 </style>
 ```
@@ -132,6 +139,7 @@ We use [changeset] to partially automate the process. Typical workflow is as fol
 ### Todos
 
 - [ ] Add tests
+- [ ] Simple playground site
 
 [greenwebfoundation]: https://www.thegreenwebfoundation.org
 [greenwebcheck]: https://www.thegreenwebfoundation.org/green-web-check
