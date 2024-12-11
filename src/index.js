@@ -46,4 +46,3 @@ export class GreenCheck extends HTMLElement {
 		shadow.appendChild(style);
 	}
 }
-

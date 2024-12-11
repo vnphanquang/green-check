@@ -27,11 +27,11 @@ Alternatively, you may load the module via a CDN by adding to [importmap](https:
 
 ```html
 <script type="importmap">
-  {
-    "imports": {
-      "@vnphanquang/green-check": "https://cdn.jsdelivr.net/npm/@vnphanquang/green-check/dist/index.js"
-    }
-  }
+	{
+		"imports": {
+			"@vnphanquang/green-check": "https://cdn.jsdelivr.net/npm/@vnphanquang/green-check/dist/index.js"
+		}
+	}
 </script>
 ```
 
@@ -50,8 +50,8 @@ Optionally, you may find dynamically importing the module to be more efficient d
 
 ```javascript
 async function loadGreenCheck() {
-  const { GreenCheck } = await import('@vnphanquang/green-check');
-  customElements.define('green-check', GreenCheck);
+	const { GreenCheck } = await import('@vnphanquang/green-check');
+	customElements.define('green-check', GreenCheck);
 }
 
 // later
@@ -65,12 +65,12 @@ site. If not provided `hostname` will default to `window.location.hostname`, i.e
 
 ```html
 <green-check hostname="www.yourdomain.xyz">
-  <img
-    src="https://cdn.jsdelivr.net/npm/@vnphanquang/green-check/dist/fallback.svg"
-    width="200"
-    height="95"
-    alt="Fallback blank greencheck badge from The Green Web Foundation, in case JS is not (yet) available"
-  />
+	<img
+		src="https://cdn.jsdelivr.net/npm/@vnphanquang/green-check/dist/fallback.svg"
+		width="200"
+		height="95"
+		alt="Fallback blank greencheck badge from The Green Web Foundation, in case JS is not (yet) available"
+	/>
 </green-check>
 ```
 
@@ -80,21 +80,21 @@ Colors of the badge can be customized by providing the following CSS custom prop
 
 ```html
 <green-check hostname="www.yourdomain.xyz">
-  <!-- [...truncated fallback image...] -->
+	<!-- [...truncated fallback image...] -->
 </green-check>
 
 <style>
-  green-check {
-    /* not passing green check */
-    --green-check-fg: #000;
-    --green-check-bg: linear-gradient(45deg, #6c6c6c 4%, #dedede 24%, #fff 32%);
+	green-check {
+		/* not passing green check */
+		--green-check-fg: #000;
+		--green-check-bg: linear-gradient(45deg, #6c6c6c 4%, #dedede 24%, #fff 32%);
 
-    &[green]:not([green="false"]) {
-      /* passing green check */
-    --green-check-fg: #000;
-    --green-check-bg: linear-gradient(45deg, #06ff06 4%, #dffcdd 24%, #fff 32%);
-    }
-  }
+		&[green]:not([green='false']) {
+			/* passing green check */
+			--green-check-fg: #000;
+			--green-check-bg: linear-gradient(45deg, #06ff06 4%, #dffcdd 24%, #fff 32%);
+		}
+	}
 </style>
 ```
 
@@ -149,4 +149,3 @@ We use [changeset] to partially automate the process. Typical workflow is as fol
 [pnpm.install]: https://pnpm.io/installation
 [changeset]: https://github.com/changesets/changesets
 [package.json]: ./package.json
-
