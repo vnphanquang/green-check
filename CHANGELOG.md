@@ -1,5 +1,11 @@
 # @vnphanquang/green-check
 
+## 1.0.5
+
+### Patch Changes
+
+- [`faa6446`](https://github.com/vnphanquang/green-check/commit/faa6446d0d24f941aacbbbc619ad8fe4f29d395a) Thanks [@vnphanquang](https://github.com/vnphanquang)! - ellipsis on long dynamic texts
+
 ## 1.0.4
 
 ### Patch Changes
