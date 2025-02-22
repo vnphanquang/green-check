@@ -19,6 +19,18 @@
 	--green-check-bg: linear-gradient(45deg, #06ff06 4%, #dffcdd 24%, #fff 32%);
 }
 
+.green {
+	display: none;
+}
+
+:host([green]:not([green='false'])) .green {
+	display: block;
+}
+
+:host([green]:not([green='false'])) .unknown {
+	display: none;
+}
+
 * {
 	box-sizing: border-box;
 }
