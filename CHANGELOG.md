@@ -1,5 +1,13 @@
 # @vnphanquang/green-check
 
+## 1.0.4
+
+### Patch Changes
+
+- [`ad44904`](https://github.com/vnphanquang/green-check/commit/ad449043d073df633c8088fdb8561022bbbc7160) Thanks [@vnphanquang](https://github.com/vnphanquang)! - optimize svg paths
+
+- [`ad44904`](https://github.com/vnphanquang/green-check/commit/ad449043d073df633c8088fdb8561022bbbc7160) Thanks [@vnphanquang](https://github.com/vnphanquang)! - render logo correctly load (question mark when not passing green check)
+
 ## 1.0.3
 
 ### Patch Changes
