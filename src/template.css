@@ -91,7 +91,10 @@ svg {
 }
 
 .content p {
+	overflow: hidden;
 	min-height: 9px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .content p:not(:first-child) {
